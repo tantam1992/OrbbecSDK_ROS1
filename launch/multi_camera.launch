@@ -8,9 +8,11 @@
 
     <arg name="camera_name" default="ob_camera"/>
     <arg name="3d_sensor" default="gemini_330_series"/>
+    <arg name="3d_sensor_less" default="gemini_330_less"/>
     <arg name="dcw_sensor" default="dabai_dcw"/>
 
     <arg name="gemini_device_num" default="3"/>
+    
     <!-- <arg name="dcw_device_num" default="2"/> -->
 
     <arg name="camera1_prefix" default="back"/>
