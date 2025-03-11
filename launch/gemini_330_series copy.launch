@@ -14,14 +14,14 @@
     <!-- https://www.orbbec.com/docs/g330-use-depth-presets/ -->
     <arg name="device_preset" default="Default"/>
     <arg name="diagnostics_frequency" default="1.0"/>
-    <arg name="enable_laser" default="false"/>
+    <arg name="enable_laser" default="true"/>
     <arg name="laser_on_off_mode" default="0"/>
     <arg name="sync_mode" default="standalone"/>
     <arg name="enable_hardware_d2d" default="true"/>
 
     <!-- Color camera parameters -->
-    <arg name="color_width" default="320"/>
-    <arg name="color_height" default="180"/>
+    <arg name="color_width" default="640"/>
+    <arg name="color_height" default="480"/>
     <arg name="color_fps" default="6"/>
     <arg name="enable_color" default="true"/>
     <arg name="color_format" default="MJPG"/>
@@ -48,9 +48,9 @@
     <arg name="enable_color_auto_white_balance" default="true"/>
 
     <!-- Depth camera parameters -->
-    <arg name="depth_width" default="480"/>
-    <arg name="depth_height" default="270"/>
-    <arg name="depth_fps" default="6"/>
+    <arg name="depth_width" default="640"/>
+    <arg name="depth_height" default="480"/>
+    <arg name="depth_fps" default="15"/>
     <arg name="enable_depth" default="true"/>
     <arg name="depth_format" default="Y16"/>
     <arg name="depth_registration" default="true"/>
@@ -100,14 +100,14 @@
     <arg name="enable_decimation_filter" default="false"/>
     <arg name="enable_hdr_merge" default="false"/>
     <arg name="enable_sequenced_filter" default="false"/>
-    <arg name="enable_threshold_filter" default="true"/>
+    <arg name="enable_threshold_filter" default="false"/>
     <arg name="enable_noise_removal_filter" default="true"/>
     <arg name="enable_spatial_filter" default="false"/>
     <arg name="enable_temporal_filter" default="false"/>
     <arg name="enable_hole_filling_filter" default="false"/>
     <arg name="sequence_id_filter_id" default="1"/>
-    <arg name="threshold_filter_max" default="2000"/>
-    <arg name="threshold_filter_min" default="0"/>
+    <arg name="threshold_filter_max" default="-1"/>
+    <arg name="threshold_filter_min" default="-1"/>
     <arg name="noise_removal_filter_min_diff" default="256"/>
     <arg name="noise_removal_filter_max_size" default="80"/>
     <arg name="spatial_filter_alpha" default="-1.0"/>
